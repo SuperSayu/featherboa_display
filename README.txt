@@ -1,6 +1,8 @@
 This is a Circuit Python project based on the Adafruit example described here:
 https://learn.adafruit.com/led-acrylic-sign/overview
 
+This project animates the lights for the acrylic/lucite display, and accepts any set of RGB values in any quantity.  This causes it to smoothly transition between colors, with a slight sideways "slide" to the transition which is most notable when transitioning to and from the "off" state.  With the correct hardware modification, this project can also switch between animations and remember the change between boots.
+
 I do not intend to keep the flash images and Adafruit Neopixel python library on this repo updated -- they are sane at the time of this upload, but you may want to get fresh files from Adafruit.
 
 HARDWARE
