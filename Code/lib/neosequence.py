@@ -86,7 +86,7 @@ def trans( cur, next ):
   db = (next[2] - tb) / s
   # For lack of proper direction we will just randomly pick left or right wipes for each transition
   tfunc = trans_funcs[ randint( 0, 1 ) ]
-  for i in range( 1, s ):
+  for i in range( 0, s ):
     tr += dr
     tg += dg
     tb += db
@@ -94,7 +94,7 @@ def trans( cur, next ):
   # The above fully animated the leading pixel.  The change must still propagate through the rest.
   # The below makes sure all pixels end up at the target value.
   temp = next[0:3]
-  for i in range( 0, NUMBER_PIXELS - 1 ):
+  for i in range( 0, NUMBER_PIXELS ):
     tfunc( temp )
   sleep( next[3] )
 
